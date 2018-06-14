@@ -1,0 +1,26 @@
+{
+  "name": "restoran",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbl07/voooyn.git"
+  },
+  "author": "tbl07",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tbl07/voooyn/issues"
+  },
+  "homepage": "https://github.com/tbl07/voooyn#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "md5": "^2.2.1",
+    "mysql": "^2.13.0"
+  }
+}
