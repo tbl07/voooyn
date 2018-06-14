@@ -1,9 +1,9 @@
 # Voyn.io Web Service
 
 ## Category List
-If parentId is null, default is zero
+ParentId boşsa, varsayılan sıfırdır
 
-Request : GET http://voyn.io.domain:9090/category/:parentId
+İstek : GET http://voyn.io.domain:9090/category/:parentId
 
 Response :
 ```json
@@ -11,9 +11,9 @@ Response :
   [
     {
       "categoryID":1,
-      "name":"Sıcak İçecekler",
+      "name":"İçecekler",
       "sort":1,
-      "image":"sicak-icecekler.jpg",
+      "image":"icecekler.jpg",
       "parentID":0,
       "date":"0000-00-00"
     }
@@ -23,7 +23,7 @@ Response :
 
 ## Product List 
 
-Request : GET http://voyn.io.domain:9090/product/:categoryId
+İstek : GET http://voyn.io.domain:9090/product/:categoryId
 
 Response :
 ```json
@@ -34,14 +34,14 @@ Response :
             "name": "Tavuk Sote",
             "category": 2,
             "price": 12.5,
-            "description": "Özel soslar ile hazırlanmış nefis tavuk sote",
+            "description": "Soslar ile hazırlanmış nefis tavuk sote",
             "date": "2017-05-01T21:00:00.000Z",
             "deleteAt": "",
             "stars": 5,
             "startsCount": 1,
             "images": [
                 {
-                    "image": "sebzeli-tavuk-sote.jpg"
+                    "image": "Tavuk-sote.jpg"
                 }
             ],
             "options": [
@@ -62,7 +62,7 @@ Response :
                         {
                             "optionValueID": 2,
                             "value": "Acı Sos",
-                            "price": 1.99,
+                            "price": 2.99,
                             "optionID": 1
                         }
                     ]
@@ -74,7 +74,7 @@ Response :
 ```
 ## Get Temp Desk
 
-Request : POST http://voyn.io.domain:9090/tempdesk
+İstek : POST http://voyn.io.domain:9090/tempdesk
 
 Example Body : 
 ```json
@@ -92,7 +92,7 @@ Result :
 
 ## Add Order
 
-Request : POST http://voyn.io.domain:9090/order
+İstek : POST http://voyn.io.domain:9090/order
 
 Example Body : 
 ```json
@@ -120,7 +120,7 @@ Result :
 ```
 ## Get Desk List
 
-Request : GET http://voyn.io.domain:9090/desklist
+İstek : GET http://voyn.io.domain:9090/desklist
 
 Result :
 ```json
@@ -142,7 +142,7 @@ Result :
 
 ## Get Order List
 
-Request : GET http://voyn.io.domain:9090/deskOrders/:tempId
+İstek : GET http://voyn.io.domain:9090/deskOrders/:tempId
 
 Result :
 ```json
@@ -167,7 +167,7 @@ Result :
 
 ## Change Order Status
 
-Request : POST http://voyn.io.domain:9090/changestatus
+İstek : POST http://voyn.io.domain:9090/changestatus
 
 Example Body : 
 ```json
@@ -186,7 +186,7 @@ Result :
 
 ## Get Order Baskets
 
-Request : GET http://voyn.io.domain:9090/baskets/:orderId
+İstek : GET http://voyn.io.domain:9090/baskets/:orderId
 
 Result :
 ```json
@@ -212,7 +212,7 @@ Result :
 
 ## Edit Baskets
 
-Request : POST http://voyn.io.domain:9090/editbasket
+İstek : POST http://voyn.io.domain:9090/editbasket
 
 Example Body : 
 ```json
@@ -241,7 +241,7 @@ Result :
 
 ## Delete Baskets
 
-Request : POST http://voyn.io.domain:9090/deletebasket
+İstek : POST http://voyn.io.domain:9090/deletebasket
 
 Example Body : 
 ```json
